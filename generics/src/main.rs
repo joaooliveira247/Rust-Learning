@@ -5,7 +5,8 @@ use generics::ex1::{largest_char, largest_i32};
 // use generics::ex3::Point;
 // use generics::ex4::Point;
 // use  generics::ex5::Point;
-use generics::ex6::Point;
+// use generics::ex6::Point;
+use generics::ex7::Point;
 
 #[allow(dead_code)]
 fn escopo_1() {
@@ -64,12 +65,23 @@ fn escopo_5() {
     // println!("p.x = {}", p.x());
 }
 
+#[allow(dead_code)]
 fn escopo_6() {
-    let p: Point<f32> = Point {x: 12.0, y:5.0};
+    // let p: Point<f32> = Point {x: 12.0, y:5.0};
 
-    println!("{:?}", p.origin_distance())
+    // println!("{:?}", p.origin_distance())
+}
+
+fn escopo_7() {
+    let p1 = Point {x:5, y:10.4};
+
+    let p2 = Point {x: "Ola", y: 'c'};
+
+    let p3 = p1.mix(p2);
+
+    println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
 }
 
 fn main() {
-    escopo_6();
+    escopo_7();
 }

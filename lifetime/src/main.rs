@@ -1,6 +1,6 @@
 mod lifetime;
 
-use lifetime::{ex1, ex2};
+use lifetime::{ex1, ex2, ex3};
 
 #[allow(dead_code)]
 fn escopo_1() {
@@ -16,6 +16,7 @@ fn escopo_2() {
     println!("The largest string is {}", result);
 }
 
+#[allow(dead_code)]
 fn escopo_3() {
     let string_1 = String::from("The largest string is largest");
     {
@@ -25,6 +26,16 @@ fn escopo_3() {
     }
 }
 
+#[allow(dead_code)]
+fn escopo_4() {
+    let novel = String::from("Call me Ishmael. Some years ago...");
+    let first_setence = novel.split('.').next().expect("Could not find a '.'");
+    let i = ex3::ImportantExcerpt {
+        part: first_setence,
+    };
+    println!("{:?}", i);
+}
+
 fn main() {
-    escopo_3();
+    escopo_4();
 }

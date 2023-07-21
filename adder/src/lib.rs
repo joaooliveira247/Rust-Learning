@@ -34,23 +34,38 @@ impl Rectangle {
     }
 }
 
+// #[cfg(test)]
+// mod tests {
+//     use super::*;
+
+//     #[test]
+//     fn larger_can_hold_smaller() {
+//         let larger = Rectangle::new(8,7);
+//         let smaller = Rectangle::new(5, 1);
+        
+//         assert!(larger.can_hold(&smaller));
+//     }
+
+//     #[test]
+//     fn smaller_cannot_hold_larger() {
+//         let larger = Rectangle::new(8, 7);
+//         let smaller = Rectangle::new(5, 1);
+
+//         assert!(!smaller.can_hold(&larger))
+//     }
+// }
+
+#[allow(dead_code)]
+pub fn add_two(a: i32) -> i32 {
+    a + 3
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn larger_can_hold_smaller() {
-        let larger = Rectangle::new(8,7);
-        let smaller = Rectangle::new(5, 1);
-        
-        assert!(larger.can_hold(&smaller));
-    }
-
-    #[test]
-    fn smaller_cannot_hold_larger() {
-        let larger = Rectangle::new(8, 7);
-        let smaller = Rectangle::new(5, 1);
-
-        assert!(!smaller.can_hold(&larger))
+    fn it_adds_two() {
+        assert_eq!(4, add_two(2));
     }
 }

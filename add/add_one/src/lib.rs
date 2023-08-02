@@ -9,7 +9,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn teste_add_one() {
+    fn te   ste_add_one() {
         let result = add_one(2);
         assert_eq!(result, 3);
     }

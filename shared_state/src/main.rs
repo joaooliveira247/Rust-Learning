@@ -1,7 +1,7 @@
 mod mutex_api;
 
-use mutex_api::ex1;
+use mutex_api::ex2;
 
 fn main() {
-    ex1::run();
+    ex2::run();
 }

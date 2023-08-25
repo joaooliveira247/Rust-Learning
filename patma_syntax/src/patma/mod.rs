@@ -5,3 +5,5 @@ pub mod range_val;
 pub mod destructuring_structs;
 pub mod destructuring_enums;
 pub mod destructuring_enums_structs;
+pub mod destructuring_structs_tuples;
+pub mod ignoring_values;

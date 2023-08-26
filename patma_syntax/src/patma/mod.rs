@@ -7,3 +7,8 @@ pub mod destructuring_enums;
 pub mod destructuring_enums_structs;
 pub mod destructuring_structs_tuples;
 pub mod ignoring_values;
+pub mod ignoring_parts_nested;
+pub mod ignoring_unused_vars;
+pub mod ignoring_remaining_parts;
+pub mod extra_match_arms;
+pub mod binds;

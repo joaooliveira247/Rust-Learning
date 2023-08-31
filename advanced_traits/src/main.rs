@@ -1,7 +1,7 @@
 mod traits;
 
-use traits::default_generic_operator_overloading;
+use traits::non_methods_same_name;
 
 fn main() {
-    default_generic_operator_overloading::run();
+    non_methods_same_name::run();
 }

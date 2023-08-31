@@ -1,7 +1,7 @@
 mod traits;
 
-use traits::non_methods_same_name;
+use traits::external_traits_external_types;
 
 fn main() {
-    non_methods_same_name::run();
+    external_traits_external_types::run();
 }
